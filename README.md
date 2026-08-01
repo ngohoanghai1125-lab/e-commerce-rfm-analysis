@@ -6,22 +6,22 @@
 ---
 
 ##  Data Cleaning & Transformation
-Key preprocessing steps implemented in Python (`pandas`):
-1. **Handling Missing Values:** Dropped rows where `Customer ID` or `Description` was null.
+Key preprocessing steps implemented in Python (pandas):
+1. **Handling Missing Values:** Dropped rows where Customer ID or Description was null.
 2. **Filtering Out Cancellation & Test Transactions:** 
-   * Filtered out orders starting with `'C'` (Cancellations/Returns).
-   * Filtered out negative or zero `Quantity` and `Price` values.
+   * Filtered out orders starting with 'C' (Cancellations/Returns).
+   * Filtered out negative or zero Quantity and Price values.
 3. **Feature Engineering:**
-   * Created `Total Sales = Quantity * Price`
-   * Extracted `Year`, `Month`, `YearMonth`, `DayOfWeek`, `Hour` from `InvoiceDate`.
+   * Created Total Sales = Quantity * Price
+   * Extracted Year, Month, YearMonth, DayOfWeek, Hour from InvoiceDate.
 
 ---
 
 ## RFM Customer Segmentation
 Customers were evaluated based on three primary metrics calculated as of the latest transaction date in the dataset:
 * **Recency (R):** Days since the last purchase.
-* **Frequency (F):** Total number of distinct orders (`Invoice.nunique()`).
-* **Monetary (M):** Total monetary spend (`Total Sales.sum()`).
+* **Frequency (F):** Total number of distinct orders (Invoice.nunique()).
+* **Monetary (M):** Total monetary spend (Total Sales.sum()).
 
 ### Scoring & Segmentation Logic
 * Quantile scoring (1–5 scale) applied to R, F, and M metrics.
@@ -46,13 +46,13 @@ Customers were evaluated based on three primary metrics calculated as of the lat
 ##  Power BI Interactive Dashboard
 The final Power BI dashboard is structured into 3 functional zones:
 
-1. **Executive KPI Cards:** Total Revenue (`$8.91M`), Total Orders (`18,532`), Total Customers (`4,338`).
+1. **Executive KPI Cards:** Total Revenue ($8.91M), Total Orders (18,532), Total Customers (4,338).
 2. **Core Trend & Breakdown Charts:**
    * **Monthly Sales Trend:** Line chart showcasing Q4 revenue acceleration.
    * **Customer Segmentation (RFM):** Horizontal bar chart mapping customer distribution across RFM groups.
    * **Top Revenue by Country:** Regional sales breakdown (UK vs International).
    * **Top 10 Selling Products:** High-performing items driving revenue.
-3. **Interactive Slicers:** Date range slider (`InvoiceDate`), Country dropdown, and RFM Segment filter.
+3. **Interactive Slicers:** Date range slider (InvoiceDate), Country dropdown, and RFM Segment filter.
 
 ---
 
