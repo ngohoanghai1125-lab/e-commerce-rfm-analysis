@@ -5,7 +5,7 @@
 
 ---
 
-## 🧹 Data Cleaning & Transformation
+##  Data Cleaning & Transformation
 Key preprocessing steps implemented in Python (`pandas`):
 1. **Handling Missing Values:** Dropped rows where `Customer ID` or `Description` was null.
 2. **Filtering Out Cancellation & Test Transactions:** 
@@ -17,7 +17,7 @@ Key preprocessing steps implemented in Python (`pandas`):
 
 ---
 
-## 🎯 RFM Customer Segmentation
+## RFM Customer Segmentation
 Customers were evaluated based on three primary metrics calculated as of the latest transaction date in the dataset:
 * **Recency (R):** Days since the last purchase.
 * **Frequency (F):** Total number of distinct orders (`Invoice.nunique()`).
@@ -34,7 +34,7 @@ Customers were evaluated based on three primary metrics calculated as of the lat
 
 ---
 
-## 💡 Key Business Insights
+##  Key Business Insights
 1. **Strong Q4 Seasonal Surge:** Sales peak significantly in **October and November** (~$1.1M–$1.2M/month), driven by holiday shopping.
 2. **Geographic Concentration:** Over **80%+ of total revenue** originates from the **United Kingdom**, followed by the Netherlands, EIRE, Germany, and France.
 3. **Customer Value Distribution:** 
@@ -43,7 +43,7 @@ Customers were evaluated based on three primary metrics calculated as of the lat
 
 ---
 
-## 🖥️ Power BI Interactive Dashboard
+##  Power BI Interactive Dashboard
 The final Power BI dashboard is structured into 3 functional zones:
 
 1. **Executive KPI Cards:** Total Revenue (`$8.91M`), Total Orders (`18,532`), Total Customers (`4,338`).
@@ -56,7 +56,7 @@ The final Power BI dashboard is structured into 3 functional zones:
 
 ---
 
-## 🚀 Actionable Recommendations
+##  Actionable Recommendations
 * **VIP Retention (Champions & Loyal Customers):** Offer exclusive preview sales, early access to holiday inventory, and dedicated loyalty perks.
 * **Win-Back Campaigns (At Risk & Can't Lose Them):** Deploy personalized email offers with discount incentives to re-engage high-value inactive users before Q4.
 * **Nurturing Potential Loyalists & Promising:** Introduce product recommendation engines and cross-selling bundles to increase order frequency.
