@@ -1,6 +1,6 @@
-* **Data Processing & Analytics:** Python (`pandas`, `numpy`, `datetime`)
-* **Data Visualization:** Python (`matplotlib`, `seaborn`), Power BI Desktop
-* **Data Modeling:** Power BI Data Model (1-to-Many Relationship between Clean Sales and RFM Segments via `Customer ID`)
+* **Data Processing & Analytics:** Python (pandas, numpy, datetime)
+* **Data Visualization:** Python (matplotlib, seaborn), Power BI Desktop
+* **Data Modeling:** Power BI Data Model (1-to-Many Relationship between Clean Sales and RFM Segments via Customer ID)
 * **Version Control & Documentation:** Git, GitHub, Markdown
 
 ---
